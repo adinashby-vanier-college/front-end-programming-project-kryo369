@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran Suraj | Personal Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Social Media Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header with Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Kiran Suraj</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Welcome to My Personal Website</h1>
+        <p>Software Developer | Cybersecurity Specialist | Part-time Trainer</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/kiran-suraj-81a607216" target="_blank" class="fab fa-linkedin" title="LinkedIn"></a>
+            <a href="https://www.facebook.com/kiransuraj666" target="_blank" class="fab fa-facebook" title="Facebook"></a>
+            <a href="https://www.instagram.com/_kira_369_/" target="_blank" class="fab fa-instagram" title="Instagram"></a>
+        </div>
+        <button id="changeTextButton" class="btn btn-primary mt-4">Change Welcome Message</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5 text-center">
+        <h2 class="text-center mb-4">About Me</h2>
+        <img src="img/Dp.jpg" alt="Kiran Suraj" class="about-photo rounded-circle mx-auto d-block">
+        <p>I am a dedicated professional pursuing certifications in Software Development and Cybersecurity. I have a passion for technology, improving security systems, and helping organizations protect their valuable data. My mission is to innovate and implement secure and efficient solutions in the tech world.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container my-5">
+        <h2 class="text-center mb-4">My Portfolio</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card p-3 mb-4" style="background-color: #f7c8d3;">
+                    <h5>FedEx Trainer</h5>
+                    <p>Conducted technical and cybersecurity training programs.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 mb-4" style="background-color: #c8f7d5;">
+                    <h5>Corporate Legal Advisor</h5>
+                    <p>Provided consultancy to firms outside Canada on technology-related laws.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 mb-4" style="background-color: #d3f7f6;">
+                    <h5>Freelance Developer</h5>
+                    <p>Delivered secure software solutions to various clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <p>If you'd like to connect or discuss opportunities, feel free to reach out!</p>
+        <ul class="list-unstyled text-center">
+            <li><strong>Email:</strong> <a href="mailto:Kiransuraj666@gmail.com">Kiransuraj666@gmail.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kiran-suraj-81a607216" target="_blank">www.linkedin.com/in/kiran-suraj-81a607216</a></li>
+            <li><strong>Facebook:</strong> <a href="https://www.facebook.com/kiransuraj666" target="_blank">www.facebook.com/kiransuraj666</a></li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/_kira_369_/" target="_blank">@_kira_369_</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kiran Suraj. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript for Dynamic Text -->
+    <script>
+        document.getElementById('changeTextButton').addEventListener('click', function() {
+            document.querySelector('.hero-section h1').innerHTML = "Hello, I'm Kiran Suraj!";
+            document.querySelector('.hero-section p').innerHTML = "Welcome to my professional website!";
+        });
+    </script>
+</body>
+
+</html>
